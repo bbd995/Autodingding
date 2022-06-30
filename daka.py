@@ -132,13 +132,13 @@ class AutoDaka:
 #                             value="/html/body/div[1]/div[1]/div/section/div[4]/ul/li[26]/div/input").send_keys(verify_code)
 
         # 本人承诺
-        try:
-            commit = WebDriverWait(driver, 20).until(
-                EC.element_to_be_clickable((By.XPATH, 
-                                    '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[26]/div/div/div/span[1]/i'))) 
-            commit.click()
-        except Exception as error:
-            print('commit wrong...\n', error)
+#        try:
+#            commit = WebDriverWait(driver, 20).until(
+ #               EC.element_to_be_clickable((By.XPATH, 
+  #                                  '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[26]/div/div/div/span[1]/i'))) 
+   #         commit.click()
+    #    except Exception as error:
+     #       print('commit wrong...\n', error)
 
         # 提交信息
         driver.find_element(by=By.XPATH, 
