@@ -100,11 +100,19 @@ class AutoDaka:
         inSchool.click()
 
         time.sleep(1)
+        
+        # 是否实习
+        inSchool = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[7]/div/div/div[3]/span[1]")))
+        inSchool.click()
 
+        time.sleep(1)
+        
+        
         try:  # 提交位置信息
             area_element = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable(
-                    (By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[9]/div/input"))
+                    (By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[10]/div/input"))
             )
             area_element.click()
             print("地理位置信息已提交")
@@ -142,7 +150,7 @@ class AutoDaka:
 
         # 提交信息
         driver.find_element(by=By.XPATH, 
-                            value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click()
+                            value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
 
         time.sleep(2)
         
