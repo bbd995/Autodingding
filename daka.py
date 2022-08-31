@@ -150,8 +150,8 @@ class AutoDaka:
 
         # 提交信息
         driver.find_element(by=By.XPATH, 
-                            value="/html/body/div[1]/div[1]/div/section/div[5]/div").click() 
- #/html/body/div[1]/div[1]/div/section/div[5]/div/a
+                            value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
+ # /html/body/div[1]/div[1]/div/section/div[5]/div/a
         time.sleep(2)
         
         # 弹出的确认提交窗口，点击确定
