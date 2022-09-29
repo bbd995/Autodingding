@@ -62,6 +62,7 @@ class AutoDaka:
             username_input.send_keys(self.username)
             password_input.send_keys(self.password)
             print("已登录到浙大统一身份认证平台")
+            time.sleep(1)
             login_button.click()
             time.sleep(1)
         except Exception as err:
@@ -149,7 +150,8 @@ class AutoDaka:
      #       print('commit wrong...\n', error)
 
         # 提交信息
-        driver.find_element(by=By.XPATH, value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
+        driver.find_element(by=By.XPATH, 
+                            value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
  # /html/body/div[1]/div[1]/div/section/div[5]/div/a
         time.sleep(2)
         
