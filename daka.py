@@ -36,7 +36,7 @@ class AutoDaka:
         chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument('--hide-scrollbars')
         chrome_options.add_argument('--headless')
-        chrome_options.add_argument('blink-settings=imagesEnabled=false')
+    
 
         # 创建chrome驱动
         driver = webdriver.Chrome(options=chrome_options) 
@@ -63,7 +63,7 @@ class AutoDaka:
             username_input.send_keys(self.username)
             password_input.send_keys(self.password)
             print("已登录到浙大统一身份认证平台")
-            # time.sleep(3)
+            time.sleep(3)
             login_button.click()
             time.sleep(1)
         except Exception as err:
