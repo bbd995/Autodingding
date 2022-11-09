@@ -36,6 +36,7 @@ class AutoDaka:
         chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument('--hide-scrollbars')
         chrome_options.add_argument('--headless')
+        chrome_options.add_argument('blink-settings=imagesEnabled=false')
 
         # 创建chrome驱动
         driver = webdriver.Chrome(options=chrome_options) 
