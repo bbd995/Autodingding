@@ -158,8 +158,7 @@ class AutoDaka:
      #       print('commit wrong...\n', error)
 
         # 提交信息
-        driver.find_element(by=By.XPATH, 
-                            value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
+        driver.find_element(by=By.XPATH, value="/html/body/div[1]/div[1]/div/section/div[5]/div/a").click() 
  # /html/body/div[1]/div[1]/div/section/div[5]/div/a
         time.sleep(2)
       
